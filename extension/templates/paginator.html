@@ -1,0 +1,25 @@
+{% load i18n %}
+<div>
+    <span>
+        {% if not is_first %}
+            <a href="?p=1">{% trans "first" %}</a>
+        {% endif %}
+        
+        {% if page_obj.has_previous %}
+            <a href="?p={{ page_obj.previous_page_number }}">{% trans "previous" %}</a>
+        {% endif %}
+        
+        {% for page_number in page_numbers %}
+            <a href="?p={{ page_number }}">{{ page_number }}</a>
+        {% endfor %}
+        
+        
+        {% if page_obj.has_next %}
+            <a href="?p={{ page_obj.next_page_number }}">{% trans "next" %}</a>
+        {% endif %}
+        
+        {% if not is_last %}
+            <a href="?p={{ paginator.num_pages }}">{% trans "last" %}</a>
+        {% endif %}
+    </span>
+</div>
