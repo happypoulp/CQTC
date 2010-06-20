@@ -4,9 +4,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="/statics/img/favicon.png" />
     <link type="text/css" rel="stylesheet" href="/statics/css/reset.css" />
     <link type="text/css" rel="stylesheet" href="/statics/css/base.css" />
-    <script type="text/javascript" src="/statics/js/jquery-1.4.min.js"></script>
     {% block css %}{% endblock css %}
-    {% block js %}{% endblock js %}
+    {% block top_js %}
+    {% endblock top_js %}
     <title>{% block title %}C'est quoi ton code?{% endblock %}</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div id="wrapper">
         <div id="header">
             <div id="header_content">
-                <a href="/">Home</a>
+                <a class="logo" href="/">C'est quoi ton code</a>
             </div>
         </div>
         <div id="content">
@@ -28,6 +28,11 @@
         <div id="footer_content">
             <p>Copyright (c) 2010 - By <b>"2 great guys"</b></p>
         </div>
+    </div>
+    <div id="bottom_js">
+        {% block bottom_js %}
+            <script type="text/javascript" src="/statics/js/jquery-1.4.min.js"></script>
+        {% endblock bottom_js %}
     </div>
 </body>
 </html>
