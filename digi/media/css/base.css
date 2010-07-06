@@ -48,6 +48,25 @@ div#wrapper
 div#content
 {
     margin-bottom: 20px;
+    color: #888888;
+}
+
+div#content form label
+{
+    display: inline-block;
+    margin-right: 8px;
+    text-align: right;
+    width: 88px;
+}
+
+div#content form input[type="submit"]
+{
+    margin-left: 198px;
+}
+
+div#content .dark_color
+{
+    color: #333;
 }
 
 /********** Footer **********/

@@ -5,11 +5,18 @@
 {% block content %}
 
 <div id="title">
-    <h1>Je suis devant ta porte là, et...</h1>
+    <h1>Your contacts</h1>
 </div>
 
 <div id="content">
-    Everything begins here.
+    {% for contact in contacts %}
+    <div class="dark_color"><b>{{ contact.firstname }} {{ contact.lastname }}</b> as <b>{{ contact.pseudo }}</b> : {{ contact.code }} - <a href="/edit/{{ contact.id }}">edit</a></div>
+    {% endfor %}
+    <h2>Add a contact</h2>
+    <form action="#" method="post" class="dark_color">
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
 </div>
 
 {% endblock %}

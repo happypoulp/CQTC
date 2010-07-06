@@ -26,8 +26,12 @@ DATABASE_PASSWORD = ''         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 
+
+# Shell : 
+# $ mongo
+# > use digi
+# > db.addUser('dummy', 'dummy')
 connect('digi', 'dummy', 'dummy')
-print dir(connect)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
