@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Contact{% endblock %}
+
+{% block content %}
+
+<div id="title">
+    <h1>Edit Contact</h1>
+</div>
+
+<div id="content">
+    {{ contact.id }}
+    <form action="#" method="post" class="dark_color">
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+{% endblock %}
