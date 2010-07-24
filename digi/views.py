@@ -50,4 +50,9 @@ def edit(request, contact):
     return render_to_response('edit.html', {
         'form': form,
         'contact': contact
-    })    
+    })
+
+def delete(request, contact):
+    contact = Contact.objects(id=contact)[0]
+    contact.delete()
+    return HttpResponseRedirect('/')

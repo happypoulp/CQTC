@@ -13,6 +13,7 @@ print project_path+'/digi/media/css/'
 urlpatterns = patterns('',
     (r'^/?$', 'cqtc.digi.views.index'),
     (r'^edit/(?P<contact>[a-z0-9]+)/?$', 'cqtc.digi.views.edit'),
+    (r'^delete/(?P<contact>[a-z0-9]+)/?$', 'cqtc.digi.views.delete'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:

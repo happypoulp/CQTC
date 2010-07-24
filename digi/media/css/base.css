@@ -4,7 +4,7 @@ div#header
 {
     width: 100%;
     height: 90px;
-    border-bottom: 14px solid #7FD5FF;
+    border-bottom: 8px solid #000;
     background: #4794bf;
 }
 
@@ -26,14 +26,14 @@ div#header_content a.logo
 /*    background: transparent url(/statics/images/logo.png) scroll no-repeat 0 center;*/
     text-decoration: none;
 /*    padding-left: 90px;*/
-    color: #000;
+    color: #FFFFFF;
     margin-top: 8px;
     font-family: Georgia;
     margin-left: 0;
     font-size: 5em;
     font-weight: bold;
     letter-spacing: -2px;
-    text-shadow: 1px 1px 8px #7FD5FF;
+    text-shadow: 1px 1px 8px #9FE1FF;
 }
 
 /********** Content **********/
@@ -73,7 +73,7 @@ div#content .dark_color
 div#content h1,
 div#content h2
 {
-    color: #9BAECF;
+    color: #555;
 }
 
 /********** Footer **********/
@@ -99,7 +99,7 @@ div#footer_content
 
 div.push
 {
-    height: 65px;
+    height: 101px;
 }
 
 /********** Common header/content/footer **********/
